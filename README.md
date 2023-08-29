@@ -3,7 +3,7 @@ with the ability to manage my time and efforts efficiently. Experienced in makin
 the product better by finding the problem points and eliminating them. I have 
 completed several solid courses and constantly continue to develop myself. 
 _______________________________________________________
-Hard Skills
+*Hard Skills*
 - strong theoretical knowledge of various software testing types, design techniques and methods
 - creating test documentation (checklists, test cases, bug reports, test plans, reports)
 - cross-browser and cross-platform testing (web and mobile application testing)
@@ -32,7 +32,7 @@ JANUARY 2021 — SEPTEMBER 2022
 - time and task management
 - people management
 
-Architect 
+Architect at design studio
 SEPTEMBER 2012 — JANUARY 2021
 _______________________________________________________
 Education
