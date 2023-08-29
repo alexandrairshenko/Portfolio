@@ -5,7 +5,7 @@
 - [Tools](#tools)
 - [Employment History](#employment-history)
 - [Achievements](#achievements)
-- [Goal](#goal)
+- [Personal Goal](#personal-goal)
 
 ## About me
 
