@@ -48,3 +48,13 @@ JANUARY 2021 — SEPTEMBER 2022
 Architect at design studio
 SEPTEMBER 2012 — JANUARY 2021
 _______________________________________________________
+**Achievements**
+
+- successfully managed projects in both large teams (15 members) and small teams as the sole QA specialist
+- strong time management skills (handling simultaneous management of two projects independently)
+_______________________________________________________
+**Goal**
+
+Passionate about supporting development efforts and enhancing team delivery capabilities through efficient QA practices. 
+Seeking opportunities to contribute and grow within a dynamic team environment.
+_______________________________________________________
