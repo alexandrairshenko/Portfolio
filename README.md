@@ -3,7 +3,8 @@ with the ability to manage my time and efforts efficiently. Experienced in makin
 the product better by finding the problem points and eliminating them. I have 
 completed several solid courses and constantly continue to develop myself. 
 _______________________________________________________
-*Hard Skills*
+**Hard Skills**
+
 - strong theoretical knowledge of various software testing types, design techniques and methods
 - creating test documentation (checklists, test cases, bug reports, test plans, reports)
 - cross-browser and cross-platform testing (web and mobile application testing)
@@ -15,7 +16,18 @@ _______________________________________________________
 - basic knowledge of JavaScript, Python 
 - understanding of software development methodologies (Waterfall, Agile, Scrum, Kanban)
 _______________________________________________________
-Employment History
+**Tools**
+
+- Android Studio 
+- Browser Stack
+- Postman 
+- DevTools 
+- Charles 
+- CygWin
+- GitHub
+- DBeaver
+_______________________________________________________
+**Employment History**
 
 QA Engineer at Syberry
 NOVENBER 2022 — PRESENT
@@ -35,7 +47,7 @@ JANUARY 2021 — SEPTEMBER 2022
 Architect at design studio
 SEPTEMBER 2012 — JANUARY 2021
 _______________________________________________________
-Education
+**Education**
 
 QA Engineer, Practicum by Yandex
 JULY 2022 — OCTOBER 2022
