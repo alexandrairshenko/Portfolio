@@ -39,11 +39,13 @@ NOVENBER 2022 — PRESENT
 - working on new and legacy projects
 - communicating with project managers, developers, and customers
 
+
 Project Manager at design studio  
 JANUARY 2021 — SEPTEMBER 2022
 - participation and control of working processes
 - time and task management
 - people management
+
 
 Architect at design studio  
 SEPTEMBER 2012 — JANUARY 2021
