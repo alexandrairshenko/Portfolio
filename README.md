@@ -1,10 +1,9 @@
 # Portfolio
 ---
-## Table of Contents
-- [About me](#About me)
-- [Hard Skills](#Hard Skills)
+- [About me](#Aboutme)
+- [Hard Skills](#HardSkills)
 - [Tools](#Tools)
-- [Employment History](#Employment History)
+- [Employment History](#EmploymentHistory)
 - [Achievements](#Achievements)
 - [Goal](#Goal)
 _______________________________________________________
