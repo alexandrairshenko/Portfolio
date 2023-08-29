@@ -1,0 +1,677 @@
+{
+	"info": {
+		"_postman_id": "f4d673d6-0deb-4b90-81d6-55bc4086fd5a",
+		"name": "QA A.Irshenko portfolio 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24701514",
+		"_collection_link": "https://solar-equinox-275398.postman.co/workspace/study_2~f7f744f0-4683-4dc5-8dfb-99e6a07a46a2/collection/24701514-f4d673d6-0deb-4b90-81d6-55bc4086fd5a?action=share&source=collection_link&creator=24701514"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "get an existing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/employee/5"
+			},
+			"response": []
+		},
+		{
+			"name": "get an unvalid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/employee/abc"
+			},
+			"response": []
+		},
+		{
+			"name": "get an unexisting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/employee/101"
+			},
+			"response": []
+		},
+		{
+			"name": "create valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"45\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create name spaces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"  \",\"salary\": \"987\",\"age\": \"25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create salary spaces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Molly\",\"salary\": \"  \",\"age\": \"38\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create age spaces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Tommy\",\"salary\": \"6547\",\"age\": \"  \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create all spaces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \" \",\"salary\": \" \",\"age\": \" \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create name null",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":null,\"salary\":\"1891\",\"age\":\"18\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create salary null",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":null,\"age\":\"25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create age null",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"19854\",\"age\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create all null",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":null,\"salary\":null,\"age\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":123,\"salary\":\"123\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid salary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":456,\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid age",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":78}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create without name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"salary\":\"123\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create without salary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "create without age",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/create"
+			},
+			"response": []
+		},
+		{
+			"name": "update valid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"45\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "update invalid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"45\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/abc"
+			},
+			"response": []
+		},
+		{
+			"name": "update unexisting",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":\"45\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/100500"
+			},
+			"response": []
+		},
+		{
+			"name": "create name spaces",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"  \",\"salary\": \"987\",\"age\": \"25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create salary spaces",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Molly\",\"salary\": \"  \",\"age\": \"38\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create age spaces",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Tommy\",\"salary\": \"6547\",\"age\": \"  \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create all spaces",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \" \",\"salary\": \" \",\"age\": \" \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create name null",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":null,\"salary\":\"1891\",\"age\":\"18\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create salary null",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":null,\"age\":\"25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create age null",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"19854\",\"age\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create all null",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":null,\"salary\":null,\"age\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":123,\"salary\":\"123\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid salary",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":456,\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create invalid age",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\",\"age\":78}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create without name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"salary\":\"123\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create without salary",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create without age",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"test\",\"salary\":\"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/delete/2"
+			},
+			"response": []
+		},
+		{
+			"name": "delete an invalid id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/delete/abc"
+			},
+			"response": []
+		},
+		{
+			"name": "delete  an unexisting",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/delete/100500"
+			},
+			"response": []
+		}
+	]
+}

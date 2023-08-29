@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "08e470b7-84c2-422c-9238-cb03ea59b8cf",
+		"name": "QA A.Irshenko portfolio 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24701514",
+		"_collection_link": "https://solar-equinox-275398.postman.co/workspace/study_3~7900d558-c2a3-42d6-ad43-73ef39c9cae9/collection/24701514-08e470b7-84c2-422c-9238-cb03ea59b8cf?action=share&source=collection_link&creator=24701514"
+	},
+	"item": [
+		{
+			"name": "authorization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key=1750584aa6a43bb5ac5886d564204e93&token=ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"HomeWork\", \r\n    \"desc\" : \"tasks for study\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards?key=1750584aa6a43bb5ac5886d564204e93&token=ATTA8a8b99f4556469acf9cbd9330c1eaa92ab258bf675548aeb70d2878c359a42080985FD6D",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "name,url",
+							"disabled": true
+						},
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA8a8b99f4556469acf9cbd9330c1eaa92ab258bf675548aeb70d2878c359a42080985FD6D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"HomeWork list\", \r\n    \"pos\" : \"top\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/iAJZ7VQL/lists?key=1750584aa6a43bb5ac5886d564204e93&token=ATTA8a8b99f4556469acf9cbd9330c1eaa92ab258bf675548aeb70d2878c359a42080985FD6D&{id}=iAJZ7VQL",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"iAJZ7VQL",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA8a8b99f4556469acf9cbd9330c1eaa92ab258bf675548aeb70d2878c359a42080985FD6D"
+						},
+						{
+							"key": "{id}",
+							"value": "iAJZ7VQL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"HomeWork card 3\", \r\n    \"pos\" : \"top\",\r\n    \"idMembers\" : \"646e27a4770dd3a64247bbff\",\r\n    \"urlSource\" : \"https://developer.atlassian.com/cloud/trello/rest/api-group-cards/#api-cards-post\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards/?idList=646e461caf8fd243369cf11c&key=1750584aa6a43bb5ac5886d564204e93&token=ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "646e461caf8fd243369cf11c"
+						},
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update card name",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"update name card\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards/646e79994877c84f2f935870?key=1750584aa6a43bb5ac5886d564204e93&token=ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"646e79994877c84f2f935870"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/alexa/Desktop/sasha/XIhGGIAS66E.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/cards/646e4a38855b9a7a8de27d59/attachments?key=1750584aa6a43bb5ac5886d564204e93&token=ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"646e4a38855b9a7a8de27d59",
+						"attachments"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1750584aa6a43bb5ac5886d564204e93"
+						},
+						{
+							"key": "token",
+							"value": "ATTA0100bdf55c0cffb545354248985473c1f8030da41eb37f4f40b1d39f254bba800AA1FDB4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

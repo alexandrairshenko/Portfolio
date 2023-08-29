@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "2fa1bae3-5f73-409c-9224-cd09de3c16ad",
+		"name": "QA A.Irshenko portfolio api auto part 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24701514"
+	},
+	"item": [
+		{
+			"name": "Post /todo-lists",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Create 5 Todo lists and save id\r",
+							"const todoListIds = [];\r",
+							"\r",
+							"for (let i = 0; i < 5; i++) {\r",
+							"    pm.sendRequest({\r",
+							"        url: `${pm.variables.get(\"url\")}/todo-lists`,\r",
+							"        method: \"POST\",\r",
+							"        header: { \"Content-Type\": \"application/json\" },\r",
+							"        body: {\r",
+							"            mode: \"raw\",\r",
+							"            raw: JSON.stringify({ \"title\": \"Some title\" })\r",
+							"        }\r",
+							"    }, (err, response) => {\r",
+							"        if (!err && response.code === 201) {\r",
+							"            const todoListId = response.json().data.item.id;\r",
+							"            todoListIds.push(todoListId);\r",
+							"        }\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// JSON schema response\r",
+							"const responseSchema = {\r",
+							"    \"type\": \"object\",\r",
+							"    \"properties\": {\r",
+							"        \"resultCode\": { \"type\": \"integer\" },\r",
+							"        \"messages\": { \"type\": \"array\" },\r",
+							"        \"data\": {\r",
+							"            \"type\": \"object\",\r",
+							"            \"properties\": {\r",
+							"                \"item\": {\r",
+							"                    \"type\": \"object\",\r",
+							"                    \"properties\": {\r",
+							"                        \"id\": { \"type\": \"string\" },\r",
+							"                        \"title\": { \"type\": \"string\" },\r",
+							"                        \"addedDate\": { \"type\": \"string\", \"format\": \"date-time\" },\r",
+							"                        \"order\": { \"type\": \"integer\" }\r",
+							"                    },\r",
+							"                    \"required\": [\"id\", \"title\", \"addedDate\", \"order\"]\r",
+							"                }\r",
+							"            },\r",
+							"            \"required\": [\"item\"]\r",
+							"        }\r",
+							"    },\r",
+							"    \"required\": [\"resultCode\", \"messages\", \"data\"]\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Response has the correct schema\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    const validationResult = tv4.validate(responseBody, responseSchema);\r",
+							"    pm.expect(validationResult, \"Response schema is valid\").to.be.true;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that resultCode is 0\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.resultCode).to.be.equal(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that messages is empty\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.messages).to.be.an(\"array\").that.is.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that the title in the response is the same as in the request\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    const titleFromResponse = responseBody.title;\r",
+							"    const titleFromRequest = requestBody.title;\r",
+							"    \r",
+							"    pm.expect(titleFromResponse).to.eql(titleFromRequest);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check if the id in the response is in UUID format\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    const idFromResponse = responseBody.id;\r",
+							"    \r",
+							"    const uuidPattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;\r",
+							"    const isUuidFormat = uuidPattern.test(idFromResponse);\r",
+							"    \r",
+							"    pm.expect(isUuidFormat, `id \"${idFromResponse}\" is in UUID format`).to.be.true;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check the id of the generated Todo lists\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    const responseId = responseBody.id;\r",
+							"    const todoListIds = pm.environment.get(\"todoListIds\");\r",
+							"    \r",
+							"    pm.expect(responseId).to.be.oneOf(todoListIds, \"Response Id matches one of the generated Ids\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Some title\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/todo-lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Get /todo-lists",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that response contains id\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody).to.have.property(\"id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check the id format\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.id).to.be.a(\"string\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Check that response contains title\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody).to.have.property(\"title\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check the title format\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.title).to.be.a(\"string\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Check that response contains addedDate\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody).to.have.property(\"addedDate\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check the addedDate format\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.addedDate).to.be.a(\"datetime\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Check that response contains order\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody).to.have.property(\"order\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check the order format\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.order).to.be.a(\"number\");\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url}}/todo-lists"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete /todo-lists/{todolistId}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that resultCode is 0\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.resultCode).to.be.equal(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that messages is empty\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.messages).to.be.an(\"array\").that.is.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that data is empty\", function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody.data).to.be.empty;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{url}}/todo-lists/{todolistId}"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "userId",
+			"value": ""
+		},
+		{
+			"key": "fullName",
+			"value": ""
+		},
+		{
+			"key": "lookingForAJob",
+			"value": ""
+		},
+		{
+			"key": "lookingForAJobDescription",
+			"value": ""
+		},
+		{
+			"key": "contacts",
+			"value": ""
+		}
+	]
+}
