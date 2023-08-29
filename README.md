@@ -60,8 +60,11 @@ September 2012 — January 2021
 
 ## Achievements
 
-- successfully managed projects in both large teams (15 members) and small teams as the sole QA specialist
-- strong time management skills (handling simultaneous management of two projects independently)
+**Project Management Skills:** I have demonstrated my ability to excel in various project dynamics by successfully managing projects within both large teams of 15 members and small teams where I operated as the sole QA specialist. This adaptability showcases my skills in contributing to team success across diverse scenarios.
+
+**Effective Time Management:** My strong time management skills have been instrumental in maintaining project timelines. Handling the concurrent management of two projects has been a testament to my commitment to ensuring each project receives the necessary attention and is delivered successfully.
+
+**High Productivity and Defect Analysis:** In March 2023, I significantly contributed to the project's success by proactively identifying defects. Out of a total of 178 reported defects addressed by 4 QA team members, I took charge of identifying 107. This achievement underscores my keen attention to detail and determination to maintain a high standard of work. Notably, my defect identification efforts account for approximately 60% of the total reported defects, reflecting my commitment to quality assurance and project excellence.
 
 ## Personal Goal
 
