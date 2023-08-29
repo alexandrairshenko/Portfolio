@@ -39,7 +39,7 @@ Completed a manual QA course with automation experience, and currently expanding
 
 ## Employment History
 
-# QA Engineer at Syberry  
+### QA Engineer at Syberry  
 NOVENBER 2022 — PRESENT
 - reviewing and analyzing requirements
 - creating and maintaining project documentation
@@ -48,13 +48,13 @@ NOVENBER 2022 — PRESENT
 - working on new and legacy projects
 - communicating with project managers, developers, and customers
  
-# Project Manager at design studio  
+### Project Manager at design studio  
 JANUARY 2021 — SEPTEMBER 2022
 - participation and control of working processes
 - time and task management
 - people management
  
-# Architect at design studio  
+### Architect at design studio  
 SEPTEMBER 2012 — JANUARY 2021
 
 ## Achievements
@@ -62,7 +62,7 @@ SEPTEMBER 2012 — JANUARY 2021
 - successfully managed projects in both large teams (15 members) and small teams as the sole QA specialist
 - strong time management skills (handling simultaneous management of two projects independently)
 
-## Goal
+## Personal Goal
 
 Passionate about supporting development efforts and enhancing team delivery capabilities through efficient QA practices. 
 Seeking opportunities to contribute and grow within a dynamic team environment.
