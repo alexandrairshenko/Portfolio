@@ -26,6 +26,7 @@ _______________________________________________________
 - CygWin
 - GitHub
 - DBeaver
+- Apache JMeter
 _______________________________________________________
 **Employment History**
 
@@ -46,12 +47,4 @@ JANUARY 2021 — SEPTEMBER 2022
 
 Architect at design studio
 SEPTEMBER 2012 — JANUARY 2021
-_______________________________________________________
-**Education**
-
-QA Engineer, Practicum by Yandex
-JULY 2022 — OCTOBER 2022
-
-Architectural design, BNTU, Minsk
-SEPTEMBER 2007 — JUNE 2012
 _______________________________________________________
