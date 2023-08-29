@@ -6,12 +6,12 @@
 - [Employment History](#employment-history)
 - [Achievements](#achievements)
 - [Goal](#goal)
-_______________________________________________________
+
 ## About me
 
 Experienced QA engineer adept at creating comprehensive testing documentation, reviewing requirements, and performing tests to ensure product quality. 
 Completed a manual QA course with automation experience, and currently expanding skills through Python study. Strong communication and teamwork skills, with experience in both large and small teams. Proven ability to manage multiple projects simultaneously while maintaining high standards.
-_______________________________________________________
+
 ## Hard Skills
 
 - strong theoretical knowledge of various software testing types, design techniques and methods
@@ -24,7 +24,7 @@ _______________________________________________________
 - basic knowledge of HTML, CSS, JSON, XML
 - basic knowledge of JavaScript, Python 
 - understanding of software development methodologies (Waterfall, Agile, Scrum, Kanban)
-_______________________________________________________
+
 ## Tools
 
 - Android Studio 
@@ -36,7 +36,7 @@ _______________________________________________________
 - GitHub
 - DBeaver
 - Apache JMeter
-_______________________________________________________
+
 ## Employment History
 
 # QA Engineer at Syberry  
@@ -56,14 +56,14 @@ JANUARY 2021 — SEPTEMBER 2022
  
 # Architect at design studio  
 SEPTEMBER 2012 — JANUARY 2021
-_______________________________________________________
+
 ## Achievements
 
 - successfully managed projects in both large teams (15 members) and small teams as the sole QA specialist
 - strong time management skills (handling simultaneous management of two projects independently)
-_______________________________________________________
+
 ## Goal
 
 Passionate about supporting development efforts and enhancing team delivery capabilities through efficient QA practices. 
 Seeking opportunities to contribute and grow within a dynamic team environment.
-_______________________________________________________
+
