@@ -42,3 +42,4 @@ JULY 2022 — OCTOBER 2022
 
 Architectural design, BNTU, Minsk
 SEPTEMBER 2007 — JUNE 2012
+_______________________________________________________
