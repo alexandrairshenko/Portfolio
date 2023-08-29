@@ -1,4 +1,14 @@
-##**About me** 
+# Portfolio
+---
+## Table of Contents
+- [About me](#About me)
+- [Hard Skills](#Hard Skills)
+- [Tools](#Tools)
+- [Employment History](#Employment History)
+- [Achievements](#Achievements)
+- [Goal](#Goal)
+_______________________________________________________
+**About me** 
 
 Experienced QA engineer adept at creating comprehensive testing documentation, reviewing requirements, and performing tests to ensure product quality. 
 Completed a manual QA course with automation experience, and currently expanding skills through Python study. Strong communication and teamwork skills, with experience in both large and small teams. Proven ability to manage multiple projects simultaneously while maintaining high standards.
