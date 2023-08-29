@@ -1,9 +1,9 @@
 # Portfolio
 ---
-- [About me](#Aboutme)
-- [Hard Skills](#HardSkills)
+- [About me](#About_me)
+- [Hard Skills](#Hard_Skills)
 - [Tools](#Tools)
-- [Employment History](#EmploymentHistory)
+- [Employment History](#Employment_History)
 - [Achievements](#Achievements)
 - [Goal](#Goal)
 _______________________________________________________
