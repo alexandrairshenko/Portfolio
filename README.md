@@ -6,6 +6,7 @@
 - [Employment History](#employment-history)
 - [Achievements](#achievements)
 - [Personal Goal](#personal-goal)
+- [Professional Showcase](#professional-showcase)
 
 ## About me
 
@@ -40,7 +41,7 @@ Completed a manual QA course with automation experience, and currently expanding
 ## Employment History
 
 ### QA Engineer at Syberry  
-NOVENBER 2022 — PRESENT
+November 2022 — Present
 - reviewing and analyzing requirements
 - creating and maintaining project documentation
 - performing multiple types of testing 
@@ -49,13 +50,13 @@ NOVENBER 2022 — PRESENT
 - communicating with project managers, developers, and customers
  
 ### Project Manager at design studio  
-JANUARY 2021 — SEPTEMBER 2022
+January 2021 — September 2022
 - participation and control of working processes
 - time and task management
 - people management
  
 ### Architect at design studio  
-SEPTEMBER 2012 — JANUARY 2021
+September 2012 — January 2021
 
 ## Achievements
 
@@ -66,4 +67,13 @@ SEPTEMBER 2012 — JANUARY 2021
 
 Passionate about supporting development efforts and enhancing team delivery capabilities through efficient QA practices. 
 Seeking opportunities to contribute and grow within a dynamic team environment.
+
+## Professional Showcase
+- [Postman Collection](QA%20A.Irshenko%20portfolio%201.postman_collection.json)
+- [Postman Collection](QA%20A.Irshenko%20portfolio%202.postman_collection.json)
+- [Postman Collection](QA%20A.Irshenko%20portfolio%20api%20auto%20part%201.postman_collection.json)
+- [Postman Collection](QA%20A.Irshenko%20portfolio%20api%20auto%20part%202.postman_collection.json)
+- [API test scenarios](QA%20A.Irshenko%20portfolio%20api%20test%20scenarios.xlsx)
+- [Checklist example](QA%20A.Irshenko%20portfolio%20checklist%20example.xlsx)
+
 
