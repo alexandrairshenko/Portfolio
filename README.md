@@ -1,7 +1,6 @@
-I bring high quality organizational skills and a self-motivated drive to achieve goals, 
-with the ability to manage my time and efforts efficiently. Experienced in making 
-the product better by finding the problem points and eliminating them. I have 
-completed several solid courses and constantly continue to develop myself. 
+**About me**
+Experienced QA engineer adept at creating comprehensive testing documentation, reviewing requirements, and performing tests to ensure product quality. 
+Completed a manual QA course with automation experience, and currently expanding skills through Python study. Strong communication and teamwork skills, with experience in both large and small teams. Proven ability to manage multiple projects simultaneously while maintaining high standards.
 _______________________________________________________
 **Hard Skills**
 
