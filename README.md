@@ -15,28 +15,30 @@ Completed a manual QA course with automation experience, and currently expanding
 
 ## Hard Skills
 
-- strong theoretical knowledge of various software testing types, design techniques and methods
-- creating test documentation (checklists, test cases, bug reports, test plans, reports)
+- strong theoretical knowledge of various software testing types, design techniques, methods and client-server architecture
+- creating and maintaining test documentation (checklists, test cases, bug reports, test plans, reports)
 - cross-browser and cross-platform testing (web and mobile application testing)
 - experience with databases, knowledge of SQL operators and functions (PostgreSQL, MySQL)
-- API testing
-- GUI testing
+- API testing (Postman, Swagger, curl)
+- Functional testing, Integration testing, Regression testing, Sanity testing, Extended testing, GUI testing, User acceptance testing 
 - bug tracking systems (Jira, Redmine, Yandex Tracker)
-- basic knowledge of HTML, CSS, JSON, XML
-- basic knowledge of JavaScript, Python 
+- basic knowledge of HTML, CSS, JSON, XML 
+- experience with HTTP, HTTPS, FTP, SMTP
 - understanding of software development methodologies (Waterfall, Agile, Scrum, Kanban)
 
 ## Tools
 
 - Android Studio 
-- Browser Stack
-- Postman 
+- BrowserStack
 - DevTools 
+- Postman
 - Charles 
-- CygWin
-- GitHub
-- DBeaver
-- Apache JMeter
+- AWS
+- Git
+- SQL
+- Python
+- Confluence
+- Jira
 
 ## Employment History
 
